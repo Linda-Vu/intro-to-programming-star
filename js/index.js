@@ -34,7 +34,6 @@ messageForm.addEventListener('submit', function (event) {
 
   const messageSection = document.getElementById('messages')
 
-
   const messageList = messageSection.querySelector('ul')
 
   const newMessage = document.createElement('li')
@@ -46,13 +45,22 @@ messageForm.addEventListener('submit', function (event) {
   removeButton.innerText = 'remove'
 
   removeButton.addEventListener('click', function (event) {
-    const entry = removeButton.parentNode
+    // event.target is the button
+    // entry is the list item
+    const entry = event.target.parentNode
+    // create a variable selecting the parent el of entry, giving us the message list
+    const list = entry.parentNode
+    if (list.children.length <= 1) {
+      messageSection.style.display = 'none'
+    }
     entry.remove()
   })
 
   newMessage.appendChild(removeButton)
 
   messageList.appendChild(newMessage)
+
+  messageSection.style.display = 'block'
 
   messageForm.reset();
   
