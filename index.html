@@ -2,94 +2,141 @@
 <html>
 
 <head>
+  <link rel="stylesheet" href="css/index.css" />
   <title>Linda Vu</title>
 </head>
 
 <body>
-  <section>
-    <h1>About:</h1>
-    <p>
-      I'm a software developer based in North Carolina. I have a background in
-      sociology and visual art, but learned how to code after college and I've
-      been working in the field ever since, starting in 2019. Outside of work,
-      some of the things I enjoy doing are: cooking, trying to keep my
-      houseplants alive, throwing pottery, and curating playlists to do my chores to.
-    </p>
-  </section>
-  <section>
-    <h1>Experience:</h1>
-    <p>
-      After receiving my bachelor's degree from UNC in 2014, I spent 3.5 years
-      managing a small business in Chapel Hill, NC. I wore a lot of hats here,
-      including marketing, design, and website management. This inspired me to
-      start teaching myself how to code on the side, and eventually I
-      committed to joining a 3-month intensive coding bootcamp in Durham, NC.
-    </p>
-    <h2>Core Competencies:</h2>
-    <div id="skills">
-      <ul>
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <ul class="menu" role="list">
+          <li class="menu__item">
+            <img class="image image--small image--rounded" src="https://via.placeholder.com/150" />
+          </li>
+          <li class="menu__item menu__item--large">
+            <a class="link link--no-color strong" href="/">Linda Vu</a>
+          </li>
+        </ul>
 
-      </ul>
+        <ul class="menu menu--hide-mobile" role="list">
+          <li class="menu__item">
+            <a class="link link--no-color" href="#about">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="link link--no-color" href="#experience">Experience</a>
+          </li>
+          <li class="menu__item">
+            <a class="link link--no-color" href="#skills">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a class="link link--no-color" href="#projects">Projects</a>
+          </li>
+          <li class="menu__item">
+            <a class="link link--no-color" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <p>
-      After this, I joined a creative digital consultancy called Skookum(now
-      known as Method). As a software consultant at Skookum, I was a part of
-      multiple full-stack teams and interfaced with many
-      clients.
-    </p>
-    <h2>Some of the projects I contributed to include:</h2>
-    <ul>
-      <li>a developer portal for interfacing with financial APIs (Drupal, custom PHP)</li>
-      <li>an internal tool and growth framework for in-house developers to track their competencies on various skills
-        and technologies (React, Rails)
-      </li>
-      <li>a proof of concept with data visualizations for measuring air quality (Handlebars injected with React, Java)
-      </li>
-      <li>an admin portal for managing inventory with geolocation for construction rentals (React, Azure, .NET, C#)</li>
-      <li>an eCommerce site for a CNC(computer numerical control) distributor (Wordpress, custom PHP)</li>
-    </ul>
-    <p>During my time at Skookum I also
-      hosted a recurring meetup in collabation with the Charlotte Developers
-      network for locals to collaborate and learn JavaScript. I also regularly
-      contributed to our efforts of initiating a formal gameplan surrounding
-      DEI efforts. After approximately 2 years at Skookum, I shifted gears
-      away from consulting to join an eCommerce startup called Carewell, as a
-      software engineer.
-    </p>
-    <p>At Carewell, we have a team of 4 full-time engineers (including
-      myself), and I've been able to have impact on many different
-      initiatives.
-    </p>
-    <h2>Some of the projects I've contributed to include:</h2>
-    <ul>
-      <li>customer facing eCommerce UI (BigCommerce, Stencil CLI, Handlebars, JavaScript)</li>
-      <li> backend platforms services (PostgreSQL, JavaScript, Node.js, AWS)</li>
-      <li>internal tooling for customer support employees (JavaScript, React, AWS)</li>
-      <li>customer facing email templates (Postmark, Handlebars/Mustachio)</li>
-    </ul>
-  </section>
-  <section>
-    <h1>Connect -></h1>
-    <ul>
-      <li>Email: tienlindavu@gmail.com</li>
-      <li>LinkedIn: https://www.linkedin.com/in/tienlindavu/</li>
-      <li>Github: https://github.com/Linda-Vu</li>
-      <li>Art Store: https://planetlinda.bigcartel.com/</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Leave a Message</h2>
-    <form name="leave_message">
-      <label for="name">Name:</label><input type="text" name="name" required="true"><br />
-      <label for="email">Email:</label><input type="email" name="email" required="true"><br />
-      <label for="text-area">Text Area:</label><textarea name="message" required="true"></textarea><br />
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-  <section id="messages" style="display: none;">
-    <h2>Messages</h2>
-    <ul></ul>
-  </section>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="about">
+        <h1>About:</h1>
+        <p>
+          I'm a software developer based in North Carolina. I have a background in
+          sociology and visual art, but learned how to code after college and I've
+          been working in the field ever since, starting in 2019. Outside of work,
+          some of the things I enjoy doing are: cooking, trying to keep my
+          houseplants alive, throwing pottery, and curating playlists to do my chores to.
+        </p>
+      </section>
+      <section id="experience">
+        <h1>Experience:</h1>
+        <p>
+          After receiving my bachelor's degree from UNC in 2014, I spent 3.5 years
+          managing a small business in Chapel Hill, NC. I wore a lot of hats here,
+          including marketing, design, and website management. This inspired me to
+          start teaching myself how to code on the side, and eventually I
+          committed to joining a 3-month intensive coding bootcamp in Durham, NC.
+        </p>
+      </section>
+      <section>
+        <div id="skills">
+          <h2>Skills:</h2>
+          <ul>
+
+          </ul>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects at Skookum:</h2>
+        <p>
+          In 2019, I joined a creative digital consultancy called Skookum(now
+          known as Method). As a software consultant at here, I was a part of
+          multiple full-stack scrum teams and interfaced with many
+          clients.
+        </p>
+        <ul>
+          <li>Developer portal for interfacing with financial APIs (Drupal, custom PHP)</li>
+          <li>Internal tool and growth framework for in-house developers to track their competencies on various
+            skills
+            and technologies (React, Rails)
+          </li>
+          <li>Proof of concept with data visualizations for measuring air quality (Handlebars injected with React,
+            Java)
+          </li>
+          <li>Admin portal for managing inventory with geolocation for construction rentals (React, Azure, .NET, C#)
+          </li>
+          <li>eCommerce site for a CNC(computer numerical control) distributor (Wordpress, custom PHP)</li>
+        </ul>
+        <p>During my time at Skookum I also
+          hosted a recurring meetup in collabation with the Charlotte Developers
+          network for locals to collaborate and learn JavaScript. I also regularly
+          contributed to our efforts of initiating a formal gameplan surrounding
+          DEI efforts. After approximately 2 years at Skookum, I shifted gears
+          away from consulting to join an eCommerce startup called Carewell, as a
+          software engineer.
+        </p>
+      </section>
+      <section>
+        <h2>Projects at Carewell:</h2>
+        <p>I joined Carewell in December 2020. We have a team of 4 full-time engineers (including
+          myself), and I've been able to have impact on many different
+          initiatives.
+        </p>
+        <ul>
+          <li>Customer facing eCommerce UI (BigCommerce, Stencil CLI, Handlebars, JavaScript)</li>
+          <li>Backend platforms services (PostgreSQL, JavaScript, Node.js, AWS)</li>
+          <li>Internal tooling for customer support employees (JavaScript, React, AWS)</li>
+          <li>Customer facing email templates (Postmark, Handlebars/Mustachio)</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h1>Connect -></h1>
+        <ul>
+          <li>Email: tienlindavu@gmail.com</li>
+          <li>LinkedIn: https://www.linkedin.com/in/tienlindavu/</li>
+          <li>Github: https://github.com/Linda-Vu</li>
+          <li>Art Store: https://planetlinda.bigcartel.com/</li>
+        </ul>
+      </section>
+      <section id="messages">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+          <label for="name">Name:</label><input type="text" name="name" required="true"><br />
+          <label for="email">Email:</label><input type="email" name="email" required="true"><br />
+          <label for="text-area">Text Area:</label><textarea name="message" required="true"></textarea><br />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section id="messages" style="display: none;">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
+    </div>
+  </main>
   <footer></footer>
   <script src="js/index.js"></script>
 </body>

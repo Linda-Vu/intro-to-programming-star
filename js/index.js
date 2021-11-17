@@ -9,7 +9,7 @@ copyright.innerHTML = `&copy; Linda Vu ${thisYear}`
 
 footer.appendChild(copyright)
 
-const skills = ['JavaScript', 'React', 'Node.js', 'HTML/CSS']
+const skills = ['JavaScript', 'React', 'Node.JS', 'HTML/CSS']
 
 const skillsSection = document.getElementById('skills')
 
@@ -62,6 +62,5 @@ messageForm.addEventListener('submit', function (event) {
 
   messageSection.style.display = 'block'
 
-  messageForm.reset();
-  
+  messageForm.reset()
 })
